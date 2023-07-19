@@ -1,23 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import "./Navigation.css"
 
 const Navigation = () => {
   return (
-    <div>
-      <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div className="text-white">
+      <nav class="customBlue border-gray-20">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link href="/" class="flex items-center">
+          <Link href="/">
             <Image
-              src="https://flowbite.com/docs/images/logo.svg"
+              src="/images/Logo.png"
               class="h-8 mr-3"
-              width={70}
-              height={70}
+              width={100}
+              height={250}
               alt="Flowbite Logo"
             />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
-            </span>
           </Link>
           <button
             data-collapse-toggle="navbar-dropdown"
@@ -44,11 +42,11 @@ const Navigation = () => {
             </svg>
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <Link
                   href="/"
-                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                  class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:customText md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   aria-current="page"
                 >
                   Home
@@ -58,7 +56,7 @@ const Navigation = () => {
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 rounded  md:hover:bg-transparent md:border-0  md:p-0 md:w-auto md:dark:hover:bg-transparent hover:customText"
                 >
                   Dropdown{" "}
                   <svg
@@ -123,7 +121,7 @@ const Navigation = () => {
               <li>
                 <Link
                   href="/"
-                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="links"
                 >
                   Services
                 </Link>
@@ -131,7 +129,7 @@ const Navigation = () => {
               <li>
                 <Link
                   href="/"
-                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="links"
                 >
                   Pricing
                 </Link>
@@ -139,7 +137,7 @@ const Navigation = () => {
               <li>
                 <Link
                   href="/"
-                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="links"
                 >
                   Contact
                 </Link>

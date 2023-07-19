@@ -12,6 +12,9 @@
     .customBackground{
         @apply bg-[#a6587c]
     }
+    .customBlue{
+        @apply bg-[#1d2f40]
+    }
     .customText{
         @apply text-[#a6587c]
     }

@@ -1,0 +1,30 @@
+
+.con{
+    position: relative;
+}
+.img{
+    position: absolute;
+    width: 100%;
+     height: 90vh;
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(60%);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(3, 22, 58, 0.349);
+    width: 100%;
+     height: 90vh;
+}
+.container{
+    position: absolute;
+    justify-content: center;
+    margin-top: 5rem;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
