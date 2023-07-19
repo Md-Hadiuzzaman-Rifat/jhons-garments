@@ -1,0 +1,3 @@
+.hoverLinks{
+    @apply customBackground text-white h-8 w-8 flex justify-center items-center rounded-full cursor-pointer hover:bg-[#884766]
+}

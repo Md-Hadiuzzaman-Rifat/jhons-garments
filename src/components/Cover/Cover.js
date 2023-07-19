@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 const Cover = () => {
   return (
     <div>
-      <div>
+      <div className="container">
         <div className="p-light">GARMEN TEXTILE INDUSTRY</div>
         <h1>You Can Never Go Wrong With Our Quality</h1>
         <p>
@@ -13,7 +13,7 @@ const Cover = () => {
           imperdiet.
         </p>
         <section>
-          <Button></Button>
+          <Button>DISCOVER MORE</Button>
           <div className="video-player"></div>
         </section>
       </div>
