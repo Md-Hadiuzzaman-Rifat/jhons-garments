@@ -12,7 +12,7 @@ const Cover = () => {
           src="/images/smiling-face.jpg"
           width={1000}
           height={1000}
-          alt=""
+          alt="smiling face"
         />
         <div className="overlay"></div>
 

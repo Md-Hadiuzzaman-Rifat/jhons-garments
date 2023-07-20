@@ -7,8 +7,8 @@ const FindFabrics = () => {
     <div className="w-full my-32">
       <div className="width container rowToCol">
         <div>
-            <Image width={900} height={900} src="/images/sexy-girl.jpg"></Image>
-            <Image width={500} height={500} src="/images/swing-old.jpg"></Image>
+            <Image width={900} height={900} alt="person is swinging" src="/images/sexy-girl.jpg"></Image>
+            <Image width={500} height={500} alt="person is swinging" src="/images/swing-old.jpg"></Image>
         </div>
         <div className="description">
             <span className="customText tracking-widest">ABOUT GARMEN</span>

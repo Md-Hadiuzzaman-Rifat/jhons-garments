@@ -1,5 +1,6 @@
 import React from "react";
 import "./Services.css";
+import CardSection from "../CardSection/CardSection";
 
 const Services = () => {
   return (
@@ -14,9 +15,9 @@ const Services = () => {
             <div className="w-[50%]">
             <p>Nulla in nibh at leo faucibus molestie eget nec velit. Phasellus vel felis vel orci iaculis tempor tristique sagittis urna. Phasellus ac ante in lacus tempor egestas.</p>
             </div>
-            
           </div>
         </div>
+        <CardSection></CardSection>
       </div>
     </div>
   );

@@ -1,0 +1,17 @@
+.movingBg{
+    background-size: 100% auto;
+    min-height: 500px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+@media screen and (max-width: 1024px){
+    .movingBg{
+        background-attachment: scroll;
+    }
+}
+.banner-show{
+    max-width: 1300px;
+    margin: 0 auto;
+}
