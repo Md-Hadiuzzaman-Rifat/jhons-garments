@@ -33,7 +33,7 @@
 
 @layer base{
      h1{
-        @apply lg:text-6xl md:text-4xl text-3xl font-bold
+        @apply lg:text-5xl md:text-4xl text-3xl font-bold
      }
      p{
         @apply text-gray-500
