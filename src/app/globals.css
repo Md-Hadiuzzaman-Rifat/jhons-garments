@@ -34,4 +34,7 @@
      p{
         @apply text-gray-500
      }
+     span{
+        @apply font-bold text-sm
+     }
 }

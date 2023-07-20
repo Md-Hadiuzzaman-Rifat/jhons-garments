@@ -5,15 +5,13 @@
 .img{
     width: 100%;
      height: inherit;
-    -webkit-filter: grayscale(60%);
-    filter: grayscale(60%);
     background-size: cover;
     background-position: center;
     object-fit: cover;
 }
 .overlay{
     position: absolute;
-    background-color: rgba(3, 22, 58, 0.349);
+    background-color: rgba(3, 22, 58, 0.411);
     top: 0;
     width: 100%;
     height: inherit;

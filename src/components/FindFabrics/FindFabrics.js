@@ -1,11 +1,34 @@
-import React from 'react';
+import Image from "next/image";
+import React from "react";
+import Button from "../Button/Button";
 
 const FindFabrics = () => {
-    return (
-        <div className='w-full border border-red-300 h-[400px]'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum nihil accusantium architecto rem et optio quos tempora sequi distinctio, iste maxime quam molestiae, officiis ex sed veniam a consequuntur laboriosam odio soluta quae explicabo. Quibusdam provident ducimus voluptatum numquam aspernatur praesentium distinctio aliquid, earum enim harum unde ipsum, ratione ipsa eligendi doloremque. Adipisci iusto pariatur consequuntur, molestias, corrupti nisi quas excepturi ratione a enim qui nostrum laboriosam inventore quidem, in repudiandae. Nihil earum laudantium sint at commodi architecto tempore explicabo iure, placeat beatae, adipisci provident quam ipsam atque ullam porro vitae dignissimos voluptates aut dolor maiores. Rerum facilis ratione magni quisquam quos autem, vero, sapiente optio nesciunt dolore officia, eaque veritatis animi quo quam harum. Nulla odit numquam quam dolores itaque voluptatibus autem. Illum optio a cumque quas molestiae fuga animi dolorem eveniet reiciendis ducimus nobis, minus unde obcaecati commodi quisquam dolore assumenda possimus vel! Iure obcaecati, in autem mollitia quis, reiciendis expedita totam voluptas nam reprehenderit animi porro soluta voluptate, ab explicabo tenetur non inventore? Suscipit ex dolore reiciendis nobis culpa excepturi aliquam odio neque voluptates repellendus nam, libero voluptate quis consequatur, illo repudiandae officiis id. Ipsa deleniti minima voluptatibus, ipsum ratione sed iusto. Qui assumenda dolorem, neque laudantium labore aspernatur, vitae illo maiores quia deserunt impedit quibusdam, ipsum quaerat dignissimos quidem. Impedit, dolor officia? Ullam cupiditate maxime obcaecati. In minima iste fugiat quas cumque rerum ad vitae officia, aliquam, et, laudantium quis expedita. Quam corporis minus voluptate? Non porro itaque unde neque incidunt dolorum, necessitatibus veritatis placeat suscipit! Fuga nulla eligendi quae quas, explicabo excepturi quis fugit beatae saepe numquam animi sed deleniti facere sunt rerum maiores similique magni ut amet sint, dolore possimus. Amet laborum eveniet ipsa mollitia debitis rem! Illum vero nostrum possimus mollitia quibusdam voluptas, iure obcaecati eveniet et sapiente, culpa assumenda quas. Itaque tempora quia neque dolorem, totam sit inventore delectus aut, amet modi voluptatibus ad sequi laborum accusantium. Veritatis, sit accusantium. Reiciendis, similique excepturi. Accusantium quibusdam facere ea praesentium dolorem veniam deleniti eaque doloribus commodi optio, voluptatum voluptatem est libero laudantium quam at repudiandae nulla beatae distinctio iusto expedita. Excepturi laborum dolor ipsum porro impedit deserunt esse ullam commodi, quis architecto odio dolore suscipit autem culpa aspernatur blanditiis deleniti reprehenderit libero. Quos consequatur rerum magnam explicabo? Facere libero ab magni velit necessitatibus veritatis recusandae aliquid explicabo labore id voluptas natus sint distinctio earum quidem ad ducimus, eligendi dolores enim vero illo, sapiente dolore nihil cum! Praesentium aut, pariatur, officiis neque assumenda minima odio alias voluptate, ad consequatur ullam earum doloremque dolorem nemo soluta. Qui vitae distinctio, ea eos facere dolore cumque. Voluptatum expedita rerum corporis? Iste minus ea unde rem laborum nisi perspiciatis maxime quam est magnam veniam voluptas, ipsum delectus molestias, numquam sit ratione culpa voluptatibus aliquid. Eius aliquid non harum cum nostrum possimus est eos similique pariatur fuga adipisci ducimus tenetur fugit consequatur odit excepturi obcaecati ea tempore exercitationem quam velit consectetur dolore, debitis saepe. Sunt voluptas, atque possimus, repudiandae maxime repellat at, ea quo dolorem ratione sint voluptatem! Illo!
+  return (
+    <div className="w-full my-32">
+      <div className="width container rowToCol">
+        <div>
+            <Image width={900} height={900} src="/images/sexy-girl.jpg"></Image>
+            <Image width={500} height={500} src="/images/swing-old.jpg"></Image>
         </div>
-    );
+        <div className="description">
+            <span className="customText tracking-widest">ABOUT GARMEN</span>
+            <h1>You Can Find All Kinds of Fabric Here</h1>
+            <p>Phasellus ultricies ex vitae neque placerat porta. Aenean libero eros ultrices vel tristique non, porta eget dolor. Donec vel ipsum imperdiet neque, sit amet porta facilisis elit. Nunc neque enim finibus at nisi non, auctor venenatis leo.</p>
+            <div>
+                <div>
+                    <h3>Our Vision</h3>
+                    {/* points  */}
+                </div>
+                <div>
+                    <h3>Our Mission</h3>
+                    {/* points  */}
+                </div>
+            </div>
+            <Button>MORE ABOUT US</Button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default FindFabrics;

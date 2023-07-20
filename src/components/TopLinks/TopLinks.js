@@ -14,7 +14,7 @@ import Link from "next/link";
 
 const TopLinks = () => {
   return (
-    <div className="py-4 pb-12 bg-slate-100">
+    <div className="py-4 bg-slate-100">
       <div className="rowToCol container">
         <div className="customFlex">
           <div className="customFlex">
