@@ -19,13 +19,12 @@ const tasks = [
 
 const Counter = () => {
   return (
-    <div className="w-full h-[350px]">
+    <div className="w-full">
       <div className="aboutContain">
         <div className="h-[350px] w-full counterFunction flex flex-col md:flex-row md:justify-between justify-center gap-6 items-center">
           <div className=" md:w-[30%] w-full">
             <h1 className="text-white">Our Industry In Number</h1>
           </div>
-
           <div className="flex flex-row gap-6">
             {tasks.map((task) => (
               <CounterFunction
@@ -39,5 +38,5 @@ const Counter = () => {
     </div>
   );
 };
-
+ 
 export default Counter;
