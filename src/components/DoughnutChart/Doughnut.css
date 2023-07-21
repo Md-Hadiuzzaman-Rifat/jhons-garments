@@ -1,0 +1,14 @@
+.doughnut{
+    width: 100px;
+    background-color: red;
+    height: 100px;
+    position: relative;
+}
+.ratio{
+    /* font-weight: bold; */
+    font-size: 1.5rem;
+    position: absolute;
+    top: 42%;
+    left: 35%;
+    z-index: 99;
+}
