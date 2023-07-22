@@ -1,0 +1,20 @@
+ .Outline{
+    position: relative;
+ }
+ .online-box{
+    content: "5000";
+    top: -20px;
+    right: -20px;
+    position: absolute;
+    padding:30px;
+    border-radius: 10px;
+    background-color: #1d2f40;
+    z-index: 99;
+ }
+ .outline-container{
+    @apply max-w-[500px] h-auto relative border-4 border-[#a6587c] rounded-xl
+}
+
+.outline-container-image{
+    @apply relative top-12 right-12
+}
