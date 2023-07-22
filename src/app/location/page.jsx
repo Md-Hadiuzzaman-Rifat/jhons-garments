@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import FormSection from "@/components/FormSection/FormSection";
 import Map from "@/components/Map/Map";
 import React from "react";
@@ -13,6 +14,7 @@ const page = () => {
           <Map text="Bangladesh"></Map>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
