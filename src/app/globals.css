@@ -33,12 +33,12 @@
 
 @layer base{
      h1{
-        @apply lg:text-3xl md:text-2xl sm:text-xl text-lg font-bold
+        @apply lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold
      }
      p{
         @apply text-gray-500 md:text-lg lg:text-xl 
      }
      span{
-        @apply font-bold text-sm
+        @apply font-semibold text-sm
      }
 }

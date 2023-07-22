@@ -2,6 +2,7 @@ import Button from "@/components/Button/Button";
 import Counter from "@/components/Counter/Counter";
 import Cover from "@/components/Cover/Cover";
 import DoughnutChart from "@/components/DoughnutChart/DoughnutChart";
+import Fabrics from "@/components/Fabrics/Fabrics";
 import FindFabrics from "@/components/FindFabrics/FindFabrics";
 import MovingBanner from "@/components/MovingBanner/MovingBanner";
 import Projects from "@/components/Projects/Projects";
@@ -19,6 +20,7 @@ const Home = () => {
       <Counter></Counter>
       {/* <Services></Services> */}
       <Review></Review>
+      <Fabrics></Fabrics>
       {/* <SliderComponent></SliderComponent> */}
       <MovingBanner></MovingBanner>
       <Projects></Projects>

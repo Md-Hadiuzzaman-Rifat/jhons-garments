@@ -30,9 +30,9 @@ function SliderComponent() {
   return (
     <section className="section center">
       <div className="title">
-        <h2>
+        <h1>
           <span>/</span>reviews
-        </h2>
+        </h1>
       </div>
       <div className="section-center">
         {people.map((person, personIndex) => {
