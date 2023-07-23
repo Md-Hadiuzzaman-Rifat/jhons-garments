@@ -1,0 +1,7 @@
+.LocationBanner{
+    background-image: url('../../image/workerTextile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll ;
+    height: 350px;
+}

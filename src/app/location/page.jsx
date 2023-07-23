@@ -1,6 +1,7 @@
 import BoxContact from "@/components/BoxContact/BoxContact";
 import Footer from "@/components/Footer/Footer";
 import FormSection from "@/components/FormSection/FormSection";
+import LocationBanner from "@/components/LocationBanner/LocationBanner";
 import Map from "@/components/Map/Map";
 import SocialLinks from "@/components/SocialLinks/SocialLinks";
 import React from "react";
@@ -8,6 +9,7 @@ import React from "react";
 const page = () => {
   return (
     <div className="w-full">
+      <LocationBanner></LocationBanner>
       <div className="width customFlexLg">
         <div className="flex-1 projectForm xl:max-w-[700px] lg:max-w-[550px] flex-1 flex-wrap">
           <span className="customText">CONTACT US</span>

@@ -5,7 +5,7 @@ import "./FormSection.css"
 const FormSection = () => {
     return (
         <form
-            className="form-container flex-1 flex flex-col gap-6 overflow-x-hidden"
+            className="form-container mb-32 flex-1 flex flex-col gap-6 overflow-x-hidden"
             action="#"
           >
             <input type="text" placeholder="Full Name" />
