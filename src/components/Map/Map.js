@@ -76,7 +76,7 @@ export default function Main() {
   return (
     <div>
 
-      <div style={{ width: "97vw", height: "100vh" }}>
+      <div style={{ maxWidth: "97vw", height:"500px"}}>
         <MapWrapped
           googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyAzo9Xzk5QwuAixqF8Kxdxp1zgMfL2DtKA&v=3.exp&libraries=geometry,drawing,places}`}
           loadingElement={<div style={{ height: `100%` }} />}

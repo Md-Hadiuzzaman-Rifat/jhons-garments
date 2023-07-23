@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
 import {BsArrowRightShort} from "react-icons/bs"
+import SocialLinks from '../SocialLinks/SocialLinks';
+import { BiPhoneCall } from "react-icons/bi";
+import {TbWorldSearch} from "react-icons/tb"
+import {AiOutlineMail} from "react-icons/ai"
+import {HiOutlineLocationMarker} from "react-icons/hi"
+
 const Footer = () => {
     return (
         <div className='w-full customBlue text-white'>
@@ -8,48 +14,50 @@ const Footer = () => {
                 {/* // first section  */}
                 <div>
                     <Image src="/images/Logo.png" width={600} height={400} alt="logon "></Image>
-                    <p>Vivamus pharetra neque a lacus ullamcorper suscipit. Aenean blandit euismod dignissim. Praesent suscipit fermentum mi.</p>
-                    <h2 className='text-red-400'>Social Links</h2>
+                    <div className='text-base md:text-xl text-gray-300'>Vivamus pharetra neque a lacus ullamcorper suscipit. Aenean blandit euismod dignissim. Praesent suscipit fermentum mi.</div>
+                    <div className='md:my-16 my-12'>
+
+                    <SocialLinks></SocialLinks>
+                    </div>
                 </div>
                 {/* //second section  */}
                 <div>
                     <h2 className='text-2xl'>Quick Links</h2>
                     <ul>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>Home</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>About Us</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>Services</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>Project</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>Pricing</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>Contact Us</li>
+                        <li className='flex'><p className='arrow'><BsArrowRightShort/></p>Home</li>
+                        <li className='flex'><p className='arrow'><BsArrowRightShort/></p>About Us</li>
+                        <li className='flex'><p className='arrow'><BsArrowRightShort/></p>Services</li>
+                        <li className='flex'><p className='arrow'><BsArrowRightShort/></p>Project</li>
+                        <li className='flex'><p className='arrow'><BsArrowRightShort/></p>Pricing</li>
+                        <li className='flex'><p className='arrow'><BsArrowRightShort/></p>Contact Us</li>
                     </ul>
                 </div>
                 {/* third section  */}
                 <div>
                 <h2 className='text-2xl'>Services</h2>
-                    <ul>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>Fabric Dyeing</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>Satin Weaving</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>Fabric Printing</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>Garment Stitching</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>Linen Weaving</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>Custom Apparel</li>
+                    <ul className='mt-8'>
+                        <li className='flex'><p className='arrow'><BsArrowRightShort/></p>Fabric Dyeing</li>
+                        <li className='flex'><p className='arrow'><BsArrowRightShort/></p>Satin Weaving</li>
+                        <li className='flex'><p className='arrow'><BsArrowRightShort/></p>Fabric Printing</li>
+                        <li className='flex'><p className='arrow'><BsArrowRightShort/></p>Garment Stitching</li>
+                        <li className='flex'><p className='arrow'><BsArrowRightShort/></p>Linen Weaving</li>
+                        <li className='flex'><p className='arrow'><BsArrowRightShort/></p>Custom Apparel</li>
                     </ul>
                 </div>
                 {/* forth section  */}
                 <div>
                 <h2 className='text-2xl'>Information</h2>
                     <ul>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>+880-1910803372</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>hadirifat100@gmail.com</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>www.hadiuzzamanrifat.com</li>
-                        <li className='flex'><p className='customText text-2xl font-bold'><BsArrowRightShort/></p>99 Roving St., Big City, PKU 23456</li>
+                        <div className='flex my-2 text-[20px]'><p className='arrow'><BiPhoneCall className='me-4 text-[22px]'/></p>+880-1910803372</div>
+                        <div className='flex my-2 text-[20px]'><p className='arrow'><AiOutlineMail className='me-4 text-[22px]'/></p>hadirifat100@gmail.com</div>
+                        <div className='flex my-2 text-[20px]'><p className='arrow'><TbWorldSearch className='me-4 text-[22px]'/></p>www.hadiuzzamanrifat.com</div>
+                        <div className='flex my-2 text-[20px]'><p className='arrow'><HiOutlineLocationMarker className='me-4 text-[22px]'/></p>99 Roving St., Big City, PKU 23456</div>
                     </ul>
                 </div>
+                
             </div>
             {/* underline  */}
-            <div>
-
-            </div>
+            
         </div>
     );
 };

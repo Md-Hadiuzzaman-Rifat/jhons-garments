@@ -1,0 +1,6 @@
+.form-container input{
+    @apply border-[3px] border-[#a6587c] p-3 rounded-md text-xl 
+}
+.form-container textarea{
+    @apply border-[3px] border-[#a6587c] p-3 rounded-md text-xl 
+}

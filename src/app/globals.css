@@ -8,7 +8,7 @@
 }
 @layer components{
     .rowToCol{
-        @apply flex flex-col md:flex-row items-center justify-center justify-between
+        @apply flex flex-col md:flex-row items-center justify-between
     }
     .customFlex{
         @apply flex gap-4 flex-row
@@ -29,6 +29,12 @@
         max-width: 1300px;
         margin: 0 auto;
     }
+    .customFlexLg{
+        @apply flex flex-col-reverse lg:flex-row gap-12 w-full justify-between items-center
+    }
+    .arrow{
+        @apply customText text-2xl font-bold text-4xl
+    }
 }
 
 @layer base{
@@ -40,5 +46,11 @@
      }
      span{
         @apply font-semibold text-sm
+     }
+     li{
+        @apply text-[20px] my-[12px] hover:text-[#a6587c] transition-all ease-in-out delay-100 cursor-pointer hover:text-[22px] duration-150
+     }
+     ul{
+        @apply pt-8 pb-16 ml-6
      }
 }

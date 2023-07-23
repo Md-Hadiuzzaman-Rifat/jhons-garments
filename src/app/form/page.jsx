@@ -6,7 +6,7 @@ import FormSection from "@/components/FormSection/FormSection";
 const Form = () => {
   return (
     <div className="w-full min-h-screen mt-20">
-      <div className="width flex flex-col lg:flex-row gap-12 w-full justify-between items-center">
+      <div className="width customFlexLg">
         {/* // form section  */}
         <div className="projectForm xl:max-w-[700px] lg:max-w-[550px] flex-1 flex-wrap">
           <span className="customText">PROJECT FORM</span>
