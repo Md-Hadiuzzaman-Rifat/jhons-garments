@@ -36,7 +36,7 @@ const cardDetails=[{
 
 const CardSection = () => {
     return (
-        <div className='flex'>
+        <div className='customGrid'>
             {
                 cardDetails.map((card)=><Card key={card.id} img={card.img} title={card.title} desc={card.desc}/>)
             }

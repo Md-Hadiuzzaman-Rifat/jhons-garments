@@ -35,6 +35,9 @@
     .arrow{
         @apply customText text-2xl font-bold text-4xl
     }
+    .customGrid{
+        @apply grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-12 md:[&>*:nth-child(3n)]:col-span-2 lg:[&>*:nth-child(3n)]:col-span-1
+    }
 }
 
 @layer base{

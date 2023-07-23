@@ -30,7 +30,7 @@ const Review = () => {
           </div>
           {/* right side  */}
           <div style={{ flex: 3 }}>
-            <div className="flex flex-col items-center justify-center md:flex-row">
+            <div className="flex flex-col items-center justify-center md:flex-row gap-16">
               <div>
                 <DoughnutChart
                   num1={95}

@@ -19,7 +19,7 @@ const Home = () => {
       <Cover></Cover>
       <FindFabrics></FindFabrics>
       <Counter></Counter>
-      {/* <Services></Services> */}
+      <Services></Services> 
       <Review></Review>
       <Fabrics></Fabrics>
       {/* <SliderComponent></SliderComponent> */}

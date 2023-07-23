@@ -22,7 +22,7 @@ const Counter = () => {
     <div className="w-full">
       <div className="aboutContain">
       <div className="width">
-        <div className="h-[350px] max-h-screen counterFunction flex flex-col md:flex-row md:justify-between justify-center items-center gap-8 items-center">
+        <div className="h-[400px] max-h-screen counterFunction flex flex-col md:flex-row md:justify-between justify-center items-center gap-8 items-center">
           <div className=" md:w-[30%] w-full">
             <h1 className="text-white">Our Industry In Number</h1>
           </div>

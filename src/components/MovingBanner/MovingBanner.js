@@ -8,7 +8,7 @@ const MovingBanner = () => {
     backgroundImage: `url("${img.src}") `
   };
   return (
-    <div className="w-full">
+    <div className="w-full my-32">
 
         <div style={properties} className="movingBg w-full">
           <div className=" banner-show min-h-[500px] flex flex-wrap flex-col justify-evenly gap-1 w-full items-center md:items-start py-12">
