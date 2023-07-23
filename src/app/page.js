@@ -4,6 +4,7 @@ import Cover from "@/components/Cover/Cover";
 import DoughnutChart from "@/components/DoughnutChart/DoughnutChart";
 import Fabrics from "@/components/Fabrics/Fabrics";
 import FindFabrics from "@/components/FindFabrics/FindFabrics";
+import Footer from "@/components/Footer/Footer";
 import MovingBanner from "@/components/MovingBanner/MovingBanner";
 import Projects from "@/components/Projects/Projects";
 import Review from "@/components/Review/Review";
@@ -24,6 +25,7 @@ const Home = () => {
       {/* <SliderComponent></SliderComponent> */}
       <MovingBanner></MovingBanner>
       <Projects></Projects>
+      <Footer></Footer>
     </div>
   );
 };

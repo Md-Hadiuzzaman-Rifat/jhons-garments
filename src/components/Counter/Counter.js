@@ -21,11 +21,12 @@ const Counter = () => {
   return (
     <div className="w-full">
       <div className="aboutContain">
-        <div className="h-[350px] w-full counterFunction flex flex-col md:flex-row md:justify-between justify-center gap-6 items-center">
+      <div className="width">
+        <div className="h-[350px] max-h-screen counterFunction flex flex-col md:flex-row md:justify-between justify-center items-center gap-8 items-center">
           <div className=" md:w-[30%] w-full">
             <h1 className="text-white">Our Industry In Number</h1>
           </div>
-          <div className="flex flex-row gap-6">
+          <div className="flex flex-col md:flex-row gap-6">
             {tasks.map((task) => (
               <CounterFunction
                 key={task.count}
@@ -34,6 +35,7 @@ const Counter = () => {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

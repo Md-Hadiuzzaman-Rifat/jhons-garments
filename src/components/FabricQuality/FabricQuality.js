@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 
 const FabricQuality = () => {
   return (
-    <div className="flex flex-col flex-wrap gap-4">
+    <div className="flex flex-col flex-wrap gap-4 my-16">
       <span className="customText">HOW WE WORK</span>
       <h1 className="my-8">Find The Fabric, Enjoy The Process and The Results</h1>
       <p>
