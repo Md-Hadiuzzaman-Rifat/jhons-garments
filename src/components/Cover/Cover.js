@@ -15,7 +15,7 @@ const Cover = () => {
           alt="smiling face"
         />
         <div className="overlay"></div>
-
+        <div className="width">
         <div className="container content">
           <div className="p-light  text-blue-200">GARMEN TEXTILE INDUSTRY</div>
           <div className="w-[70%] max-w-[95%]">
@@ -23,8 +23,7 @@ const Cover = () => {
               You Can Never Go Wrong With Our Quality
             </h1>
           </div>
-
-          <p className="text-white">
+          <p className="text-white w-[70%]">
             Integer id ipsum eu massa pretium pulvinar non vitae massa donec ut
             dignissim. Metus aenean vulputate ex sed sem aliquet dapibus. Mauris
             imperdiet.
@@ -33,6 +32,7 @@ const Cover = () => {
             <Button>DISCOVER MORE</Button>
             <div className="video-player"></div>
           </section>
+        </div>
         </div>
       </div>
     </div>

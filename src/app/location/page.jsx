@@ -9,7 +9,7 @@ import React from "react";
 const page = () => {
   return (
     <div className="w-full">
-      <LocationBanner></LocationBanner>
+      <LocationBanner title="Contact" breadCumb="Home / Contact"></LocationBanner>
       <div className="width customFlexLg">
         <div className="flex-1 projectForm xl:max-w-[700px] lg:max-w-[550px] flex-1 flex-wrap">
           <span className="customText">CONTACT US</span>
