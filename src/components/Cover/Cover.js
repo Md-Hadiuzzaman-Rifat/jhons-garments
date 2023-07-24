@@ -5,18 +5,9 @@ import Image from "next/image";
 
 const Cover = () => {
   return (
-    <div className="con">
+    <div className="w-full">
       <div className="backgroundImage">
-        <Image
-          className="img"
-          src="/images/smiling-face.jpg"
-          width={1000}
-          height={1000}
-          alt="smiling face"
-        />
-        <div className="overlay"></div>
-        <div className="width">
-        <div className="container content">
+        <div className="width h-[90vh] flex flex-col justify-center gap-8">
           <div className="p-light  text-blue-200">GARMEN TEXTILE INDUSTRY</div>
           <div className="w-[70%] max-w-[95%]">
             <h1 className="text-white">
@@ -32,7 +23,6 @@ const Cover = () => {
             <Button>DISCOVER MORE</Button>
             <div className="video-player"></div>
           </section>
-        </div>
         </div>
       </div>
     </div>

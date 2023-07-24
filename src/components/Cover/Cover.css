@@ -1,30 +1,8 @@
 .backgroundImage{
-    position: relative;
-    height: 90vh;
-}
-.img{
-    width: 100%;
-     height: inherit;
+    background-image: url('../../image/smiling-face.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     background-position: center;
-    object-fit: cover;
-}
-.overlay{
-    position: absolute;
-    background-color: rgba(3, 22, 58, 0.411);
-    top: 0;
-    width: 100%;
-    height: inherit;
-    z-index: 10;
-}
-.content{
-    position: absolute;
-    top: 0;
-    z-index: 99;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-    gap: 3rem;
+    height: 90vh;
 }
