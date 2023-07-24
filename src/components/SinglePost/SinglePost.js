@@ -2,11 +2,14 @@ import Image from "next/image";
 import React from "react";
 import {AiOutlineArrowRight} from "react-icons/ai"
 import RecentBlog from "../RecentBlog/RecentBlog";
+import BoxContainer from "../BoxContainer/BoxContainer";
+import {servicesDetails ,categories} from "./boxArray"
+import PostBanner from "../PostBanner/PostBanner";
 
 const SinglePost = () => {
   return (
     <div className="w-full">
-      <div className="width flex flex-col gap-4 lg:flex-row">
+      <div className="width  customFlexLgSeq gap-8">
         {/* // left side  */}
         <div style={{ flex: 7 }} className="SinglePostLeft flex flex-col gap-8">
           <h1>Textile Designing: Types, Importance and Impacts</h1>
@@ -58,6 +61,8 @@ const SinglePost = () => {
         </div>
         <div style={{ flex: 3 }} className="SinglePostRight">
           <RecentBlog></RecentBlog>
+          <BoxContainer></BoxContainer>
+          <PostBanner></PostBanner>
         </div>
       </div>
     </div>

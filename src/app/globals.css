@@ -29,6 +29,12 @@
         max-width: 1300px;
         margin: 0 auto;
     }
+    .customFlexLgSeq{
+        @apply flex flex-col lg:flex-row gap-12 w-full justify-start lg:items-start
+    }
+    .customFlexLg{
+        @apply flex flex-col-reverse lg:flex-row gap-12 w-full justify-between items-center
+    }
     .customFlexLg{
         @apply flex flex-col-reverse lg:flex-row gap-12 w-full justify-between items-center
     }

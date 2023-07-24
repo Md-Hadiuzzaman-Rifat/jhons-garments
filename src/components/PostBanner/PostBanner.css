@@ -1,0 +1,8 @@
+.postBackground{
+    background-image: url("../../image/corporate.jpg");
+    background-position: scroll;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
