@@ -1,10 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import {AiOutlineArrowRight} from "react-icons/ai"
+import { AiOutlineArrowRight } from "react-icons/ai";
 import RecentBlog from "../RecentBlog/RecentBlog";
 import BoxContainer from "../BoxContainer/BoxContainer";
-import {servicesDetails ,categories} from "./boxArray"
+import { servicesDetails, categories } from "./boxArray";
 import PostBanner from "../PostBanner/PostBanner";
+import "./SinglePost.css";
+import { AiOutlineSearch } from "react-icons/ai";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 const SinglePost = () => {
   return (
@@ -45,24 +48,95 @@ const SinglePost = () => {
             vitae massa. Donec ut dignissim.
           </p>
           <h3 className="font-semibold text-2xl">Impact on The Environment</h3>
-          <p>Aliquam in sapien venenatis, tincidunt lacus eu, fermentum libero sed. Fusce gravida, mauris et suscipit imperdiet, leo dolor sollicitudin nisl, id cursus justo est sit amet ipsum. Quisque en eget finibus tortor.</p>
+          <p>
+            Aliquam in sapien venenatis, tincidunt lacus eu, fermentum libero
+            sed. Fusce gravida, mauris et suscipit imperdiet, leo dolor
+            sollicitudin nisl, id cursus justo est sit amet ipsum. Quisque en
+            eget finibus tortor.
+          </p>
           {/* point section container  */}
           <div>
-            <div className="customFlex"><AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight><p>Nam tempus libero feugiat auctor fermentum. Nam id nunc dui.</p></div>
-            <div className="customFlex"><AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight><p>Suspendisse vestibulum pretium nunc, bibendum sollicitudin tortor pulvinar ut.</p></div>
-            <div className="customFlex"><AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight><p>Nunc luctus risus in eros imperdiet viverra fermentum.</p></div>
-            <div className="customFlex"><AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight><p>Praesent pharetra, massa eget euismod vulputate.</p></div>
-            <div className="customFlex"><AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight><p>Aliquam commodo vulputate enim, in condimentum lorem sodales id..</p></div>
-            <div className="customFlex"><AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight><p>Nulla in nibh at leo faucibus molestie eget nec velit fermentum.</p></div>
-            <div className="customFlex"><AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight><p>Proin tempus lorem nibh, eget iaculis turpis luctus vehicu.</p></div>
-            <div className="customFlex"><AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight><p>Integer consectetur est ac tincidunt pulvinar.</p></div>
-            <div className="customFlex"><AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight><p>Donec vel imperdiet neque, sit amet facilisis.</p></div>
+            <div className="customFlex">
+              <AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight>
+              <p>
+                Nam tempus libero feugiat auctor fermentum. Nam id nunc dui.
+              </p>
+            </div>
+            <div className="customFlex">
+              <AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight>
+              <p>
+                Suspendisse vestibulum pretium nunc, bibendum sollicitudin
+                tortor pulvinar ut.
+              </p>
+            </div>
+            <div className="customFlex">
+              <AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight>
+              <p>Nunc luctus risus in eros imperdiet viverra fermentum.</p>
+            </div>
+            <div className="customFlex">
+              <AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight>
+              <p>Praesent pharetra, massa eget euismod vulputate.</p>
+            </div>
+            <div className="customFlex">
+              <AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight>
+              <p>
+                Aliquam commodo vulputate enim, in condimentum lorem sodales
+                id..
+              </p>
+            </div>
+            <div className="customFlex">
+              <AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight>
+              <p>
+                Nulla in nibh at leo faucibus molestie eget nec velit fermentum.
+              </p>
+            </div>
+            <div className="customFlex">
+              <AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight>
+              <p>Proin tempus lorem nibh, eget iaculis turpis luctus vehicu.</p>
+            </div>
+            <div className="customFlex">
+              <AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight>
+              <p>Integer consectetur est ac tincidunt pulvinar.</p>
+            </div>
+            <div className="customFlex">
+              <AiOutlineArrowRight className="customText me-2 my-3 text-[20px]"></AiOutlineArrowRight>
+              <p>Donec vel imperdiet neque, sit amet facilisis.</p>
+            </div>
           </div>
+          <div className="w-full border-2 my-4 border-[#a6587c]"></div>
+          <SocialLinks></SocialLinks>
         </div>
         <div style={{ flex: 3 }} className="SinglePostRight">
+          <div className="postInput mb-8">
+            <input type="text" placeholder="Search..." />{" "}
+            <AiOutlineSearch className="searchIcon"></AiOutlineSearch>
+          </div>
           <RecentBlog></RecentBlog>
-          <BoxContainer></BoxContainer>
+          <div className="mt-16">
+            {
+              <BoxContainer
+                className="rounded-lg "
+                itemsArray={servicesDetails}
+                text="text-white"
+                theme="customBlue"
+                title="Our Services"
+              ></BoxContainer>
+            }
+          </div>
           <PostBanner></PostBanner>
+          <div className="mt-16">
+            {
+              <BoxContainer
+                className="rounded-lg"
+                properties="border-2 border-[#a6587c] mb-16"
+                itemsArray={categories}
+                text="text-black"
+                theme="bg-white"
+                title="Categories"
+              ></BoxContainer>
+            }
+          </div>
+          
         </div>
       </div>
     </div>

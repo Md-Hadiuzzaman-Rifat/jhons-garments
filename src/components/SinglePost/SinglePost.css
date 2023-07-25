@@ -1,0 +1,21 @@
+.postInput {
+    border: 2px solid #a6587c;
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+}
+.searchIcon{
+    color: white;
+    background-color: #a6587c;
+    width: 50px;
+    height: inherit;
+    padding: 5px;
+}
+.postInput input{
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+}
