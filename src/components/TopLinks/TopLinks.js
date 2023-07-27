@@ -17,15 +17,15 @@ const TopLinks = () => {
         <div className="customFlex">
           <div className="customFlex">
             <BsTelephone></BsTelephone>
-            <p>+880-1910803372</p>
+            <p className="text-base">+880-1910803372</p>
           </div>
           <div className="customFlex">
             <AiOutlineMail></AiOutlineMail>
-            <p>hadirifat100@gmail.com</p>
+            <p className="text-base">hadirifat100@gmail.com</p>
           </div>
           <div className="customFlex">
             <CiLocationOn></CiLocationOn>
-            <p>Mirpur, Dhaka-1216</p>
+            <p className="text-base">Mirpur, Dhaka-1216</p>
           </div>
         </div>
         <SocialLinks></SocialLinks>

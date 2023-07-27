@@ -24,8 +24,6 @@ const Home = () => {
       <Counter></Counter>
       <Services></Services> 
       <Review></Review>
-      
-      {/* <SliderComponent></SliderComponent> */}
       <MovingBanner></MovingBanner>
       
       <Projects></Projects>
