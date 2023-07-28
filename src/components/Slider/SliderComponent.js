@@ -4,6 +4,7 @@ import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 import data from "./data";
 import "./SliderComponent.css";
+import Image from "next/image";
 
 function SliderComponent() {
   const [people, setPeople] = useState(data);
@@ -50,7 +51,7 @@ function SliderComponent() {
           return (
             <article key={id} className={position +" center"}>
               <div>
-                <img src={image} alt={name} className="person-img" />
+                <Image src={image} width={400} height={400} alt={name} className="person-img" />
               </div>
 
               <h4>{name}</h4>

@@ -25,7 +25,6 @@ const Home = () => {
       <Services></Services> 
       <Review></Review>
       <MovingBanner></MovingBanner>
-      
       <Projects></Projects>
       <Fabrics></Fabrics>
       <Blog></Blog>
