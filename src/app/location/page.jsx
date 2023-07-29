@@ -26,7 +26,7 @@ const page = () => {
           <div>
             <BoxContact></BoxContact>
             <div className="mt-12 lg:mt-0">
-            <MapLocation></MapLocation>
+            {/* <MapLocation></MapLocation> */}
             </div>
             <div className="mt-8">
               <SocialLinks></SocialLinks>
