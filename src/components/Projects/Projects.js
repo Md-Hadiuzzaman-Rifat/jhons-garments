@@ -1,53 +1,24 @@
+"use client";
 import React from "react";
 import img from "../../img/background2.png";
 import "./Projects.css";
 import SingleProject from "../SingleProject/SingleProject";
-
-const projects = [
-  {
-    id: 1,
-    title: "Cotton Fabric",
-    desc: "Lorem ipsum dolor sit amet cctetur adipiscing elit.",
-    img: "/images/cloth.jpg",
-  },
-  {
-    id: 2,
-    title: "Wool Fabric",
-    desc: "Lorem ipsum dolor sit amet cctetur adipiscing elit.",
-    img: "/images/sweater.jpg",
-  },
-  {
-    id: 3,
-    title: "Linen Fabric",
-    desc: "Lorem ipsum dolor sit amet cctetur adipiscing elit.",
-    img: "/images/bit-cloth.jpg",
-  },
-  {
-    id: 4,
-    title: "Georgette Fabric",
-    desc: "Lorem ipsum dolor sit amet cctetur adipiscing elit.",
-    img: "/images/vertical-clothe.jpg",
-  },
-  {
-    id: 5,
-    title: "Denim Fabric",
-    desc: "Lorem ipsum dolor sit amet cctetur adipiscing elit.",
-    img: "/images/jeans.jpg",
-  },
-  {
-    id: 6,
-    title: "Leather Material",
-    desc: "Lorem ipsum dolor sit amet cctetur adipiscing elit.",
-    img: "/images/leather.jpg",
-  },
-];
+import { staggerContainer } from "@/utils/motion";
+import { projects } from "./data";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const properties = {
     backgroundImage: `url("${img.src}") `,
   };
   return (
-    <div className="projects w-full mt-12">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="projects w-full mt-12"
+    >
       <div style={properties} className="projectBg">
         <div className="width flex flex-col flex-wrap items-center">
           <span className="customText text-center mb-6">OUR PROJECTS</span>
@@ -67,7 +38,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
