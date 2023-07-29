@@ -28,7 +28,7 @@ const FindFabrics = () => {
       <div className="width container customFlexLg gap-24">
         {/* left section girls with cloth */}
         <motion.div 
-          variants={fadeIn("right", "tween", 1, 0.5)}
+          variants={fadeIn("right", "tween", 0.5, 1)}
         >
         <OutlineImage></OutlineImage>
         </motion.div>
@@ -54,7 +54,7 @@ const FindFabrics = () => {
               <h3 className="font-semibold text-2xl mt-16 mb-4">Our Vision</h3>
               {visionPoints.map((point, count) => (
                 <motion.div
-                  variants={fadeIn("left","tween", count*0.2 + 0.8, 0.5)}
+                  variants={fadeIn("left","tween", count*0.2 + 0.2, 0.5)}
                 key={point.id} className="flex mb-4">
                   <BiCheckCircle
                   className="text-2xl customText"></BiCheckCircle>
@@ -69,7 +69,7 @@ const FindFabrics = () => {
 
               {missionPoints.map((point, count) => (
                 <motion.div
-                variants={fadeIn("left","tween", count*0.2 + 0.8, 0.5)} key={point.id} className="flex mb-4">
+                variants={fadeIn("left","tween", count*0.2 + 0.2, 0.5)} key={point.id} className="flex mb-4">
                   <BiCheckCircle className="text-2xl customText"></BiCheckCircle>
                   <p className="ms-4">{point.data}</p>
                 </motion.div>
@@ -78,7 +78,7 @@ const FindFabrics = () => {
 
           </div>
           <motion.div 
-            variants={fadeIn("left", "tween", 2, 0.5)}
+            variants={fadeIn("left", "tween", 1, 0.5)}
           className="mt-8">
             <Button>MORE ABOUT US</Button>
           </motion.div>
