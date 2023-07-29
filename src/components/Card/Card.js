@@ -10,7 +10,7 @@ const Card = ({ img, title, desc }) => {
       <p>{desc}</p>
       <div className="customText mt-8">
         <div className="customFlex cursor-pointer">
-          <span className="me-4">READ MORE</span>
+          <span className="me-4 cursor-pointer">READ MORE</span>
           <AiOutlineArrowRight></AiOutlineArrowRight>
         </div>
       </div>
