@@ -4,6 +4,7 @@ import img from "../../img/background2.png";
 import "./Projects.css";
 import SingleProject from "../SingleProject/SingleProject";
 import {
+  fadeIn,
   staggerChildren,
   staggerContainer,
   textVariant,
@@ -16,26 +17,33 @@ const Projects = () => {
     backgroundImage: `url("${img.src}") `,
   };
   return (
-    <div className="projects w-full mt-12">
+    <div className="projects w-full ">
       <div style={properties} className="projectBg">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="width flex flex-col flex-wrap items-center"
+          className="width flex flex-col flex-wrap my-32 items-center"
         >
           <motion.span
-            variants={textVariant(0)}
+            variants={fadeIn("up", "tween", 0, 0.5)}
             className="customText text-center mb-6"
           >
             OUR PROJECTS
           </motion.span>
-          <motion.h1 variants={textVariant(0.1)} className="text-center">
+          <motion.h1
+            variants={fadeIn("up", "tween", 0.1, 0.5)}
+            className="text-center"
+          >
             Some of Our Project
           </motion.h1>
-          <motion.div variants={textVariant(0.2)} className="w-[70%]">
-            <p className="py-6">
+          <motion.div
+            variants={fadeIn("up", "tween", 0.2, 0.5)}
+            className="w-[70%]"
+          >
+            <p className="
+            my-12">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod,
               quidem. A, vel? Sunt sapiente aspernatur sit quod repellendus
               dignissimos eos?

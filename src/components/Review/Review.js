@@ -5,10 +5,7 @@ import DoughnutChart from "../DoughnutChart/DoughnutChart";
 import { motion } from "framer-motion";
 import {
   fadeIn,
-  slideIn,
   staggerChildren,
-  staggerContainer,
-  textContainer,
   textVariant,
   textVariant2,
 } from "@/utils/motion";

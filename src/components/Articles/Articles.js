@@ -1,39 +1,35 @@
-import React from 'react';
-import SingleArticle from '../SingleArticle/SingleArticle';
-
-const articles=[
-    {
-        id:0,
-        image:"/images/many-worker.jpg",
-        title:"Textile Designing: Types, Importance and Impacts",
-        date:"February 09, 2023",
-        msg:0
-    },
-    {
-        id:1,
-        image:"/images/machine.jpg",
-        title:"Textile Designing: Types, Importance and Impacts",
-        date:"February 09, 2023",
-        msg:0
-    },
-    {
-        id:2,
-        image:"/images/swing-old.jpg",
-        title:"Textile Designing: Types, Importance and Impacts",
-        date:"February 09, 2023",
-        msg:0
-    },
-]
+"use client";
+import React from "react";
+import SingleArticle from "../SingleArticle/SingleArticle";
+import { motion } from "framer-motion";
+import { articles } from "./articleData";
+import { fadeIn } from "@/utils/motion";
 
 const Articles = () => {
-    return (
-        <div className="customFlexLg
-         gap-4">
-            {
-                articles.map((singleArticle)=> <SingleArticle key={singleArticle.id} img={singleArticle.image} title={singleArticle.title} date={singleArticle.date} msg={singleArticle.msg}></SingleArticle> )
-            }
-        </div>
-    );
+  return (
+    <motion.div
+      className="customFlexLg
+         gap-4"
+    >
+      {articles.map((singleArticle, count) => (
+        <motion.div
+          key={singleArticle.id}
+          variants={fadeIn("up", "tween", (count + 0.1) * 0.5, 0.5)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+        >
+          <SingleArticle
+            count={count}
+            img={singleArticle.image}
+            title={singleArticle.title}
+            date={singleArticle.date}
+            msg={singleArticle.msg}
+          ></SingleArticle>
+        </motion.div>
+      ))}
+    </motion.div>
+  );
 };
 
 export default Articles;

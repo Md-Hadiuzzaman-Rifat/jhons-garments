@@ -1,14 +1,21 @@
 import Image from "next/image";
-import "./SingleArticle.css"
+import "./SingleArticle.css";
 import React from "react";
 import { CiCalendarDate } from "react-icons/ci";
 import { BiMessageMinus } from "react-icons/bi";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
+
 const SingleArticle = ({ img, title, date, msg }) => {
   return (
     <div className="customBlue rounded-lg single-article">
-      <Image className="single-article-image" src={img} height={1000} width={1000} alt={title}></Image>
+      <Image
+        className="single-article-image"
+        src={img}
+        height={1000}
+        width={1000}
+        alt={title}
+      ></Image>
       <div className="p-8 flex flex-col gap-6">
         <h3 className="text-white font-semibold text-2xl">{title}</h3>
         <div className="text-white flex gap-8">

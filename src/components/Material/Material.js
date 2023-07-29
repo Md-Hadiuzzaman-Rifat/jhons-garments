@@ -1,35 +1,22 @@
+"use client"
 import Image from "next/image";
 import React from "react";
-
-const items = [
-  {
-    id: 1,
-    img: "/images/dontKnow-icon.png",
-    title: "Consultation",
-  },
-  {
-    id: 2,
-    img: "/images/note-icon.png",
-    title: "Choose Your Material",
-  },
-  {
-    id: 3,
-    img: "/images/worker.png",
-    title: "Production",
-  },
-  {
-    id: 4,
-    img: "/images/pillow-icon.png",
-    title: "The Final Result",
-  },
-];
+import {items} from "./materialData"
+import {motion} from "framer-motion"
+import { fadeIn } from "@/utils/motion";
 
 const Material = () => {
   return (
-    <div>
-      {items.map((item) => {
+    <motion.div
+      initial="hidden"
+      whileInView="show"
+      viewport={{once:false, amount: 0.25}}
+    >
+      {items.map((item, count) => {
         return (
-          <div
+          <motion.div
+            variants={fadeIn("right", "tween", (count+0.1)*0.3,1)}
+
             key={item.id}
             className="flex h-auto w-full flex-col gap-4 md:flex-row  md:justify-start items-center"
           >
@@ -49,11 +36,10 @@ const Material = () => {
                 Lorem ipsum dolor sit amet elit. Itaque corrupti impedit conse.
               </p>
             </div>
-          </div>
+          </motion.div>
         );
       })}
-    </div>
-    // </div>
+    </motion.div>
   );
 };
 
