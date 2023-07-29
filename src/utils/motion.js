@@ -81,6 +81,7 @@ export const headerVariants = {
       opacity: 1,
       y: 0,
       transition: {
+        delay:0.2,
         type: "tween",
         ease: "easeIn",
       },
@@ -180,7 +181,7 @@ export const headerVariants = {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.5,
+        staggerChildren: 0.08,
       },
     },
   };

@@ -2,15 +2,15 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "@/utils/motion";
+import { fadeIn, slideIn, staggerContainer } from "@/utils/motion";
 
 const CoverTail = () => {
   return (
     <motion.div
-      variants={fadeIn("up", "tween", 0, 0.3)}
+      variants={fadeIn("up", "tween", 0.2, 0.3)}
       initial="hidden"
       whileInView='show'
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
       className="w-full mt-[-50px] z-20 px-6"
     >
       <div className="width">
