@@ -26,9 +26,9 @@ const Review = () => {
             style={{ flex: 6 }}
           >
             <motion.span
-              variants={textVariant2}
+              variants={fadeIn("up", "tween", 0, 0.7)}
             className="customText">WHY CHOOSE GARMEN</motion.span>
-            <motion.h1 variants={textVariant2} className="my-8">
+            <motion.h1 variants={fadeIn("up", "tween", 0.5, 0.7)} className="my-8">
               Lowest Price Guaranteed, Quality Never Compromised
             </motion.h1>
             <motion.p
