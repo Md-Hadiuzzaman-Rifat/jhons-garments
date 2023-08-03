@@ -2,7 +2,7 @@ import BoxContact from "@/components/BoxContact/BoxContact";
 import Footer from "@/components/Footer/Footer";
 import FormSection from "@/components/FormSection/FormSection";
 import LocationBanner from "@/components/LocationBanner/LocationBanner";
-import MapLocation from "@/components/Map/MapLocation";
+
 import SocialLinks from "@/components/SocialLinks/SocialLinks";
 import React from "react";
 
@@ -25,9 +25,9 @@ const page = () => {
         <div className="flex-1 p-8">
           <div>
             <BoxContact></BoxContact>
-            <div className="mt-12 lg:mt-0">
-            {/* <MapLocation></MapLocation> */}
-            </div>
+            {/* <div className="mt-12 lg:mt-0">
+            <MapLocation></MapLocation>
+            </div> */}
             <div className="mt-8">
               <SocialLinks></SocialLinks>
             </div>

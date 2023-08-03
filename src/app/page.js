@@ -17,7 +17,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
+    <div  className="overflow-x-hidden">
       <Cover></Cover>
       <CoverTail></CoverTail>
       <FindFabrics></FindFabrics>

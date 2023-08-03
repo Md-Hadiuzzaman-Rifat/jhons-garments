@@ -7,7 +7,7 @@ import { textContainer, textVariant2 } from "@/utils/motion";
 
 const Services = () => {
   return (
-    <div className="w-full">
+    <div className="w-full" id="services">
       <div className="servicesBackground">
         <div className="width">
           <motion.div 

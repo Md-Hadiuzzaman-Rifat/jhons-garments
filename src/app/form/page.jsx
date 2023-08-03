@@ -1,6 +1,5 @@
 import React from "react";
-import "./form.css";
-import Button from "@/components/Button/Button";
+
 import OutlineImage from "@/components/OutlineImage/OutlineImage";
 import FormSection from "@/components/FormSection/FormSection";
 const Form = () => {

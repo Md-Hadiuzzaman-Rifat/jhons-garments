@@ -18,7 +18,8 @@ import { missionPoints, visionPoints } from "./data";
 
 const FindFabrics = () => {
   return (
-    <motion.div
+    <motion.div 
+      id="about"
       variants={staggerChildren}
       initial="hidden"
       whileInView="show"

@@ -6,7 +6,8 @@ import { staggerContainer, fadeIn, textVariant } from "@/utils/motion";
 
 const FabricQuality = () => {
   return (
-    <motion.div
+    <motion.div 
+     id="work"
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"

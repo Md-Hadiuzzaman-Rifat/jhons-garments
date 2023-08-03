@@ -62,4 +62,10 @@
      ul{
         @apply pt-8 pb-16 ml-6
      }
+     input{
+        @apply bg-[#f1f5f8]
+     }
+     textarea{
+        @apply bg-[#f1f5f8]
+     }
 }

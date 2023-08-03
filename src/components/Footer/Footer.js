@@ -134,7 +134,7 @@ const Footer = () => {
                 <p className="arrow">
                   <TbWorldSearch className="me-4 text-[22px]" />
                 </p>
-                www.hadiuzzamanrifat.com
+                www.xyz.com
               </div>
               <div className="flex my-2 text-[20px]">
                 <p className="arrow">
